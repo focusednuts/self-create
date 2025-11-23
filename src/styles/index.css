@@ -1,0 +1,28 @@
+/* ==========================================================================
+   GLOBAL ENTRY POINT
+   ==========================================================================
+   Purpose:
+   Serves as the central aggregation layer for all core design system tokens,
+   foundations, and global behaviors. This file establishes the order,
+   consistency, and extensibility of the theme architecture.
+   ==========================================================================
+*/
+
+@import "tailwindcss";
+
+/* Color Tokens */
+@import "./colors/accessibility.css";
+@import "./colors/background.css";
+@import "./colors/border.css";
+@import "./colors/brand.css";
+@import "./colors/content.css";
+@import "./colors/interactive.css";
+@import "./colors/state.css";
+
+/* Structural Layers */
+@import "./layers/a11y.css";
+@import "./layers/reset.css";
+@import "./layers/typography.css";
+
+/* Theme Variants */
+@custom-variant dark (&:is(.dark *));
