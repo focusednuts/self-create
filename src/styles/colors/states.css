@@ -1,0 +1,53 @@
+/* ==========================================================================
+   STATE COLORS
+   ==========================================================================
+   `--success`: Base success color for positive indicators and light-emphasis
+   semantic signaling.
+   `--success-emphasis`: High-emphasis success tone for alerts, badges,
+   confirmations, and impactful UI moments.
+   `--warning`: Base warning color used for general caution, notices,
+   or moderate-severity feedback.
+   `--warning-emphasis`: Strong warning color for high-visibility scenarios
+   such as banners, alerts, or elevated risk states.
+   `--danger`: Base danger color used for errors, destructive actions, and
+   critical feedback.
+   `--danger-emphasis`: High-emphasis danger tone for severe alerts,
+   blocking states, and critical destructive actions.
+   ==========================================================================
+*/
+
+:root {
+    /* LIGHT THEME — STATE */
+    --success: oklch(0.65 0.15 150);
+    --success-emphasis: oklch(0.55 0.16 145);
+
+    --warning: oklch(0.70 0.14 65);
+    --warning-emphasis: oklch(0.60 0.15 60);
+
+    --danger: oklch(0.60 0.20 25);
+    --danger-emphasis: oklch(0.50 0.21 22);
+}
+
+.dark {
+    /* DARK THEME — STATE */
+    --success: oklch(0.68 0.14 152);
+    --success-emphasis: oklch(0.72 0.13 155);
+
+    --warning: oklch(0.73 0.13 67);
+    --warning-emphasis: oklch(0.76 0.12 70);
+
+    --danger: oklch(0.63 0.19 27);
+    --danger-emphasis: oklch(0.67 0.18 29);
+}
+
+@theme {
+    /* TAILWINDCSS THEME MAPPING — STATE */
+    --color-sc-success: var(--success);
+    --color-sc-success-emphasis: var(--success-emphasis);
+
+    --color-sc-warning: var(--warning);
+    --color-sc-warning-emphasis: var(--warning-emphasis);
+
+    --color-sc-danger: var(--danger);
+    --color-sc-danger-emphasis: var(--danger-emphasis);
+}

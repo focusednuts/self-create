@@ -1,0 +1,32 @@
+/* ==========================================================================
+   BORDER COLORS
+   ==========================================================================
+   `--border-subtle`: A low-emphasis tone used for quiet dividers or
+   lightweight boundaries that should not compete with content.
+   `--border-default`: A general-purpose border color applied to most
+   components and layout containers.
+   `--border-emphasis`: A higher-contrast border for interactive states
+   such as focus, selection, or active surfaces.
+   ==========================================================================
+*/
+
+:root {
+    /* LIGHT THEME — BORDERS */
+    --border-subtle: oklch(0.92 0.002 286 / 0.4);
+    --border-default: oklch(0.88 0.004 286 / 0.6);
+    --border-emphasis: oklch(0.75 0.15 85);
+}
+
+.dark {
+    /* DARK THEME — BORDERS */
+    --border-subtle: oklch(1 0 0 / 0.08);
+    --border-default: oklch(1 0 0 / 0.14);
+    --border-emphasis: oklch(0.78 0.14 88);
+}
+
+@theme {
+    /* TAILWINDCSS THEME MAPPING — BORDERS */
+    --color-sc-border-subtle: var(--border-subtle);
+    --color-sc-border-default: var(--border-default);
+    --color-sc-border-emphasis: var(--border-emphasis);
+}

@@ -1,0 +1,25 @@
+/* ==========================================================================
+   ACCESSIBILITY COLORS
+   ==========================================================================
+   `--overlay`: A semi-transparent scrim color used to tone down background
+   content.
+   `--focus-ring`: A high-visibility outline color used for focus states.
+   ========================================================================== */
+
+:root {
+    /* LIGHT THEME — ACCESSIBILITY */
+    --overlay: oklch(0.15 0.006 286 / 0.4);
+    --focus-ring: oklch(0.75 0.15 85 / 0.5);
+}
+
+.dark {
+    /* DARK THEME — ACCESSIBILITY */
+    --overlay: oklch(0 0 0 / 0.5);
+    --focus-ring: oklch(0.78 0.14 88 / 0.5);
+}
+
+@theme {
+    /* TAILWINDCSS THEME MAPPING — ACCESSIBILITY */
+    --color-sc-overlay: var(--overlay);
+    --color-sc-focus-ring: var(--focus-ring);
+}

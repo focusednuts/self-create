@@ -1,0 +1,37 @@
+/* ==========================================================================
+   CONTENT COLORS
+   ==========================================================================
+   `--content-primary`: The main text color used for essential content,
+   ensuring maximum clarity and legibility.
+   `--content-secondary`: A medium-contrast text color appropriate for body
+   copy, supporting information, and contextual labels.
+   `--content-tertiary`: A low-emphasis foreground color intended for light
+   annotations, microcopy, and non-critical metadata.
+   `--content-inverse`: A foreground color optimized for readability when
+   placed on dark, saturated, or emphasized backgrounds.
+   ==========================================================================
+*/
+
+:root {
+    /* LIGHT THEME — CONTENT */
+    --content-primary: oklch(0.15 0.006 286);
+    --content-secondary: oklch(0.48 0.012 286);
+    --content-tertiary: oklch(0.62 0.008 286);
+    --content-inverse: oklch(1 0 0);
+}
+
+.dark {
+    /* DARK THEME — CONTENT */
+    --content-primary: oklch(0.97 0 0);
+    --content-secondary: oklch(0.68 0.008 286);
+    --content-tertiary: oklch(0.52 0.012 286);
+    --content-inverse: oklch(0.15 0.006 286);
+}
+
+@theme {
+    /* TAILWINDCSS THEME MAPPING — CONTENT */
+    --color-sc-content-primary: var(--content-primary);
+    --color-sc-content-secondary: var(--content-secondary);
+    --color-sc-content-tertiary: var(--content-tertiary);
+    --color-sc-content-inverse: var(--content-inverse);
+}

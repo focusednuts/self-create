@@ -1,0 +1,36 @@
+/* ==========================================================================
+   BACKGROUND COLORS
+   ==========================================================================
+   `--canvas`: The base environmental background. Serves as the root layer
+   for pages, workspaces, or application shells.
+   `--surface`: Primary surface color used for key containers and content
+   regions.
+   `--surface-secondary`: A secondary surface layer used to organize or group
+   content within primary surfaces.
+   `--surface-tertiary`: A tertiary surface layer intended for lightly
+   differentiated or nested UI elements.
+   ========================================================================== */
+
+:root {
+    /* LIGHT THEME — BACKGROUND */
+    --canvas: oklch(1 0 0);
+    --surface: oklch(0.99 0 0);
+    --surface-secondary: oklch(0.97 0.002 286);
+    --surface-tertiary: oklch(0.95 0.004 286);
+}
+
+.dark {
+    /* DARK THEME — BACKGROUND */
+    --canvas: oklch(0.15 0.006 286);
+    --surface: oklch(0.18 0.008 286);
+    --surface-secondary: oklch(0.22 0.01 286);
+    --surface-tertiary: oklch(0.26 0.012 286);
+}
+
+@theme {
+    /* TAILWINDCSS THEME MAPPING — BACKGROUND */
+    --color-sc-canvas: var(--canvas);
+    --color-sc-surface: var(--surface);
+    --color-sc-surface-secondary: var(--surface-secondary);
+    --color-sc-surface-tertiary: var(--surface-tertiary);
+}

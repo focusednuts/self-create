@@ -1,0 +1,37 @@
+/* ==========================================================================
+   BRAND COLORS
+   ==========================================================================
+   `--brand`: The primary brand color used for core identity expressions and
+   high-visibility accent work.
+   `--brand-emphasis`: A more saturated or intensified brand color used for
+   calls to action, promotional surfaces, and elevated emphasis states.
+   `--brand-subtle`: A soft and understated brand tint used for background
+   layers, subtle accents, or low-impact decorative elements.
+   `--brand-on-emphasis`: A high-contrast foreground color optimized for
+   text and iconography placed on emphasized brand backgrounds.
+   ==========================================================================
+*/
+
+:root {
+    /* LIGHT THEME — BRAND */
+    --brand: oklch(0.75 0.15 85);
+    --brand-emphasis: oklch(0.65 0.16 80);
+    --brand-subtle: oklch(0.95 0.04 90);
+    --brand-on-emphasis: oklch(0.20 0.02 75);
+}
+
+.dark {
+    /* DARK THEME — BRAND */
+    --brand: oklch(0.78 0.14 88);
+    --brand-emphasis: oklch(0.82 0.13 90);
+    --brand-subtle: oklch(0.30 0.03 85);
+    --brand-on-emphasis: oklch(0.15 0.006 286);
+}
+
+@theme {
+    /* TAILWINDCSS THEME MAPPING — BRAND */
+    --color-sc-brand: var(--brand);
+    --color-sc-brand-emphasis: var(--brand-emphasis);
+    --color-sc-brand-subtle: var(--brand-subtle);
+    --color-sc-brand-on-emphasis: var(--brand-on-emphasis);
+}
