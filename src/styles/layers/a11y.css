@@ -1,0 +1,30 @@
+/* ==========================================================================
+   ACCESSIBILITY (A11Y)
+   ==========================================================================
+   Purpose:
+   Defines foundational accessibility behaviors that remain adaptable across
+   different products, themes, and interaction models. These rules create a
+   predictable baseline for usability while allowing individual components or
+   platforms to extend, override, or specialize the experience as needed.
+
+   Notes:
+   - These behaviors are intentionally minimal and token-driven to support
+   diverse ecosystems—from multi-brand systems to cross-platform products.
+   - Visual treatment (color) is defined via semantic tokens, while motion,
+   animation, and component-level refinement can be layered on without
+   disrupting the global accessibility foundation.
+   - This structure promotes scalable, interchangeable theming architectures
+   where accessibility remains consistent regardless of UI style or brand
+   expression.
+   ==========================================================================
+*/
+
+@layer base {
+    :focus-visible {
+        @apply outline-2 outline-offset-2 outline-solid outline-sc-focus-ring;
+    }
+
+    ::selection {
+        @apply bg-sc-brand-subtle text-sc-content-primary;
+    }
+}

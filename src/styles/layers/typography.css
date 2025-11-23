@@ -1,0 +1,32 @@
+/* ==========================================================================
+   TYPOGRAPHY
+   ==========================================================================
+   Purpose:
+   Establishes adaptable global typography foundations that remain consistent
+   across brands, themes, and platforms. This layer defines high-readability
+   text defaults while allowing product teams and component systems to build
+   richer typographic experiences on top.
+
+   Notes:
+   - All visual treatments (colors, surfaces) are powered by semantic tokens to
+   ensure predictable behavior in multi-brand and multi-theme environments.
+   - Typography features (ligatures, alternates, rendering quality) are applied
+   at a global level to create a refined baseline without enforcing stylistic
+   decisions on individual components.
+   - This structure supports scalable, composable typographic architectures,
+   where components and themes remain free to extend, override, or specialize
+   without breaking global consistency.
+   ==========================================================================
+*/
+
+@layer base {
+    body {
+        @apply antialiased bg-sc-canvas text-sc-content-primary;
+
+        font-variant-ligatures: common-ligatures contextual;
+        font-variant-alternates: stylistic(1);
+        font-variant-caps: petite-caps;
+        font-feature-settings: "case";
+        text-rendering: optimizeLegibility;
+    }
+}

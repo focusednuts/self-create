@@ -1,0 +1,21 @@
+/* ==========================================================================
+   RESET
+   ==========================================================================
+   Purpose:
+   Establishes a flexible, theme-agnostic baseline that unifies core behaviors
+   across browsers, platforms, and rendering engines. This reset ensures 
+   predictable cross-environment consistency while remaining fully adaptable 
+   to varying product requirements, brand systems, or component architectures.
+
+   Notes:
+   The reset is deliberately minimal and token-driven, allowing downstream
+   layers (components, themes, or platform overrides) to extend or refine
+   behavior without breaking global consistency.
+   ==========================================================================
+*/
+
+@layer base {
+    * {
+        @apply box-border outline-sc-focus-ring border-sc-border-default;
+    }
+}
