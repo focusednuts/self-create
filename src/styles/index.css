@@ -9,6 +9,7 @@
 */
 
 @import "tailwindcss";
+@import "tw-animate-css";
 
 /* Color Tokens */
 @import "./colors/accessibility.css";
