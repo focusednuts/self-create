@@ -1,1 +1,2 @@
-export * from "./accordion"
+export { Accordion } from "./accordion"
+export { Spinner } from "./spinner"
