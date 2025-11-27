@@ -19,34 +19,34 @@ const badgeVariants = cva(
         variants: {
             variant: {
                 default: [
-                    "border-border-default",
-                    "bg-surface-secondary",
-                    "text-content-primary"
+                    "border-sc-border-default",
+                    "bg-sc-surface-secondary",
+                    "text-sc-content-primary"
                 ],
                 primary: [
-                    "border-brand",
-                    "bg-brand",
-                    "text-brand-on-emphasis"
+                    "border-sc-brand",
+                    "bg-sc-brand",
+                    "text-sc-brand-on-emphasis"
                 ],
                 success: [
-                    "border-success/30",
-                    "bg-success/10",
-                    "text-success"
+                    "border-sc-success/30",
+                    "bg-sc-success/10",
+                    "text-sc-success"
                 ],
                 warning: [
-                    "border-warning/30",
-                    "bg-warning/10",
-                    "text-warning"
+                    "border-sc-warning/30",
+                    "bg-sc-warning/10",
+                    "text-sc-warning"
                 ],
                 danger: [
-                    "border-danger/30",
-                    "bg-danger/10",
-                    "text-danger"
+                    "border-sc-danger/30",
+                    "bg-sc-danger/10",
+                    "text-sc-danger"
                 ],
                 outline: [
-                    "border-border-default",
+                    "border-sc-border-default",
                     "bg-transparent",
-                    "text-content-primary"
+                    "text-sc-content-primary"
                 ]
             }
         },
